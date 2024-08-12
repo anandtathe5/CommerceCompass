@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leverage the largest directory of DTC ecommerce software and educational resources. Explore resources to solve your challenges and crush your goals.">
+    <meta name="keywords" content="ecommerce, AI, software, resources, DTC">
+    <meta property="og:title" content="DTC Ecommerce Solutions">
+    <meta property="og:description" content="Leverage the largest directory of DTC ecommerce software and educational resources.">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <title>DTC Ecommerce Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="Hero_Video_2_8.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="content">
+            <header>
+                <h1>Commerce Compass</h1>
+                <p>Leverage the largest directory of DTC ecommerce software and educational resources to solve your challenges and crush your goals.</p>
+            </header>
+
+            <section>
+                <button id="exploreButton">Explore Resources</button>
+                <button id="connectWallet">Connect Wallet</button>
+                <p id="walletAddress">Not connected</p>
+            </section>
+        </div>
+
+        <section class="social-media">
+            <a href="https://facebook.com/sharer/sharer.php?u=https://yourwebsite.com" target="_blank" class="social-button facebook">Share on Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check+out+this+site" target="_blank" class="social-button twitter">Share on Twitter</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yourwebsite.com&title=Check+out+this+site" target="_blank" class="social-button linkedin">Share on LinkedIn</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 DTC Ecommerce Solutions. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('connectWallet').addEventListener('click', async () => {
+            if (window.ethereum) {
+                const web3 = new Web3(window.ethereum);
+                try {
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    const accounts = await web3.eth.getAccounts();
+                    document.getElementById('walletAddress').textContent = `Connected: ${accounts[0]}`;
+                } catch (error) {
+                    console.error('User denied account access');
+                }
+            } else {
+                alert('MetaMask is not installed. Please install MetaMask and try again.');
+            }
+        });
+    </script>
+</body>
+</html>

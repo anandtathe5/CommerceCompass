@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ea6a56;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .resources {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .resource-item {
+            background-color: #e0f7fa; /* Light blue background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .resource-item h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .resource-item p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .resource-item .category {
+            display: block;
+            font-size: 0.9em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .resource-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .resource-item button {
+            background-color: #e13b3b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .resource-item button:hover {
+            background-color: #de56d9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e1e3e6;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .resource-item {
+                width: 90%;
+            }
+
+            .resource-item h2 {
+                font-size: 1.5em;
+            }
+
+            .resource-item p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .resource-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .resource-item h2 {
+                font-size: 1.2em;
+            }
+
+            .resource-item p {
+                font-size: 0.8em;
+            }
+
+            .resource-item button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tool Directory</h1>
+    <p>Explore a variety of tools to enhance your eCommerce and business operations.</p>
+</header>
+
+<div class="resources">
+    <div class="resource-item">
+        <h2><a href="https://www.triplewhale.com" target="_blank">Triple Whale</a></h2>
+        <p>Centralizes metrics from all tools you use.</p>
+        <span class="category">Customer Data</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.particl.ai" target="_blank">Particl</a></h2>
+        <p>AI-Driven Product Development and Pricing Platform.</p>
+        <span class="category">Market Research</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.helium10.com" target="_blank">Helium 10</a></h2>
+        <p>Tools for expert-level product and keyword research.</p>
+        <span class="category">All-in-One</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.beprofit.com" target="_blank">BeProfit</a></h2>
+        <p>Track and analyze your lifetime profits and expenses.</p>
+        <span class="category">Analytics</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.amztracker.com" target="_blank">AMZ Tracker</a></h2>
+        <p>Get alerts when a seller tries to hijack your listing.</p>
+        <span class="category">Hijacker Alerts</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.betterreports.io" target="_blank">Better Reports</a></h2>
+        <p>Track sales, inventory, channels, and affiliates with custom reports.</p>
+        <span class="category">Customer Data</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.daasity.com" target="_blank">Daasity</a></h2>
+        <p>Helps DTC eCommerce brands unlock data-driven growth.</p>
+        <span class="category">Customer Data</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.helloprofit.com" target="_blank">HelloProfit</a></h2>
+        <p>Full suite of Amazon Seller analytics and PPC tools.</p>
+        <span class="category">Accounting</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.inventorylab.com" target="_blank">InventoryLab</a></h2>
+        <p>Tools for research, listing, and inventory management.</p>
+        <span class="category">Inventory Management</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.junglescout.com" target="_blank">Jungle Scout</a></h2>
+        <p>All-in-one platform for selling on Amazon.</p>
+        <span class="category">Product Research</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.keepa.com" target="_blank">Keepa</a></h2>
+        <p>Price history charts, alerts, and browser addons.</p>
+        <span class="category">Print-on-Demand</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.kno.com" target="_blank">Kno</a></h2>
+        <p>Data tools for Shopify merchants to make data actionable.</p>
+        <span class="category">Attribution</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.lifetimely.com" target="_blank">Lifetimely</a></h2>
+        <p>Helps stores figure out customer lifetime value.</p>
+        <span class="category">Customer Data</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.luckyorange.com" target="_blank">Lucky Orange</a></h2>
+        <p>Shows how visitors interact with your Shopify site.</p>
+        <span class="category">Heatmaps</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.managebystats.com" target="_blank">ManageByStats</a></h2>
+        <p>Provides Amazon seller tools to manage inventory and finances.</p>
+        <span class="category">Analytics</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.merchantwords.com" target="_blank">MerchantWords</a></h2>
+        <p>Keyword research and market opportunities for Amazon sellers.</p>
+        <span class="category">Keyword Research</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.morningfame.com" target="_blank">Morningfame</a></h2>
+        <p>YouTube growth analytics and keyword research.</p>
+        <span class="category">YouTube</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.optimizely.com" target="_blank">Optimizely</a></h2>
+        <p>Helps with experimentation and A/B testing for digital experiences.</p>
+        <span class="category">A/B Testing</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.semrush.com" target="_blank">SEMrush</a></h2>
+        <p>Comprehensive digital marketing suite with SEO and SEM tools.</p>
+        <span class="category">SEO</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.sellerboard.com" target="_blank">Sellerboard</a></h2>
+        <p>Amazon seller tool for managing PPC and tracking performance.</p>
+        <span class="category">PPC Management</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.sellersnap.io" target="_blank">SellerSnap</a></h2>
+        <p>AI-powered tool for optimizing Amazon PPC campaigns.</p>
+        <span class="category">PPC Management</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.seller.tools" target="_blank">Seller.Tools</a></h2>
+        <p>Amazon SEO and analytics tools for sellers.</p>
+        <span class="category">Amazon SEO</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.sellermetrics.com" target="_blank">SellerMetrics</a></h2>
+        <p>Comprehensive Amazon seller analytics and reporting.</p>
+        <span class="category">Analytics</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.sellytics.com" target="_blank">Sellytics</a></h2>
+        <p>Provides sales analytics and optimization insights for Amazon.</p>
+        <span class="category">Sales Analytics</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.sproutloud.com" target="_blank">SproutLoud</a></h2>
+        <p>Local marketing automation for multi-location businesses.</p>
+        <span class="category">Marketing Automation</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.tracktor.com" target="_blank">Tracktor</a></h2>
+        <p>Order tracking and customer experience tool.</p>
+        <span class="category">Order Tracking</span>
+    </div>
+    <div class="resource-item">
+        <h2><a href="https://www.zyro.com" target="_blank">Zyro</a></h2>
+        <p>AI-powered website builder and business tools.</p>
+        <span class="category">Website Builder</span>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Tool Directory. All rights reserved.
+</footer>
+
+</body>
+</html>
